@@ -5,7 +5,7 @@ set shiftwidth=4
 set softtabstop=4
 " indent configuration
 set autoindent
-set cindent
+"set cindent
 "
 set hlsearch
 " use relative line number
@@ -15,7 +15,7 @@ hi LineNr ctermfg=0
 set showmatch
 set matchtime=2
 " convert current word to upper case
-inoremap <c-u> <esc>viwUei
+inoremap <c-u> <esc>viwUea
 "
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
@@ -41,3 +41,5 @@ iabbrev incldue include
 
 autocmd FileType make setlocal noexpandtab
 autocmd FileType cpp :iabbrev <buffer> unss using namespace std;
+autocmd FileType c setlocal cindent
+autocmd FileType cpp setlocal cindent
