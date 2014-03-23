@@ -1,4 +1,5 @@
-vimrc
+Settings
 =====
 
-My vimrc
+.vimrc
+.bashrc
