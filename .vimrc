@@ -3,13 +3,14 @@ syntax on
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+" show filename
+set laststatus=2
 " indent configuration
 set autoindent
-"set cindent
-"
+" highlight search
 set hlsearch
-" use relative line number
-set relativenumber
+" use line number
+set nu
 hi LineNr ctermfg=0
 " match paren
 set showmatch
@@ -23,23 +24,21 @@ inoremap {{     {
 inoremap {}     {}
 "
 inoremap jk <esc>
-inoremap HH <Left>
-inoremap LL <Right>
-inoremap JJ <Down>
-inoremap KK <Up>
 inoremap BB <esc>Bi
 inoremap WW <esc>Wi
 inoremap EE <esc>Ea
 "
 nnoremap LL $
 nnoremap HH ^
-" disable arrow key in insert mode
 
 " Abbreviations
 iabbrev scnaf scanf
 iabbrev incldue include
 
+" Makefile configuration
 autocmd FileType make setlocal noexpandtab
-autocmd FileType cpp :iabbrev <buffer> unss using namespace std;
+" C configuration
 autocmd FileType c setlocal cindent
+" C++ configuration
+autocmd FileType cpp :iabbrev <buffer> unss using namespace std;
 autocmd FileType cpp setlocal cindent
