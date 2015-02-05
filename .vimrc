@@ -42,3 +42,6 @@ autocmd FileType c setlocal cindent
 " C++ configuration
 autocmd FileType cpp :iabbrev <buffer> unss using namespace std;
 autocmd FileType cpp setlocal cindent
+" rb configuration
+autocmd FileType ruby setlocal shiftwidth=2
+autocmd FileType ruby setlocal softtabstop=2
