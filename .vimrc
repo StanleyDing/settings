@@ -9,6 +9,7 @@ set laststatus=2
 set autoindent
 " highlight search
 set hlsearch
+set incsearch
 " use line number
 set nu
 hi LineNr ctermfg=0
@@ -45,3 +46,5 @@ autocmd FileType cpp setlocal cindent
 " rb configuration
 autocmd FileType ruby setlocal shiftwidth=2
 autocmd FileType ruby setlocal softtabstop=2
+" git commit
+autocmd Filetype gitcommit setlocal spell textwidth=72
