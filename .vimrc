@@ -1,4 +1,6 @@
 syntax on
+" mouse support
+set mouse=a
 " tab configuration
 set expandtab
 set shiftwidth=4
