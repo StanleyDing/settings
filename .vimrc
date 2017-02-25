@@ -1,3 +1,5 @@
+source /Users/stanley/.vundle
+
 syntax on
 " show row and column number
 set ruler
